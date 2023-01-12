@@ -1,0 +1,10 @@
+function Article(props){
+    return (
+        <article>
+        <h3>(props.article)</h3>
+        <small>(props.date) | (props.minutes) main read</small>
+        <p> (props.preview)</p>
+        </article>
+        
+    )
+}
