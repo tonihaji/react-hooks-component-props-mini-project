@@ -1,13 +1,16 @@
+import React from "react"
+import blogData from "../data/blog"
+import Article from "./Article"
 
+function ArtcleList(){
+    return(
+        <main>
+            {blogData.posts.map((post)=>(
+                <Article key={post.id} title={post.title} date={post.date} preview={post.preview}
+                />
+            ))}
 
-function ArticleList(props){
-    return (
-        <main> 
-            {articles.map((article) => (
-            <Article key={article.id} title={article.title} date={article.date} preview={article.preview} minutes={article.minutes} />
-        ))}
         </main>
     )
 }
-    
-export default ArticleList
+export default ArtcleList
